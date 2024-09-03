@@ -63,19 +63,23 @@ We can register, so I registered an account and then logged in.
 
 Here, most options were just for display, so clicking on them doesn't do anything. But two options were useful:
 
-![Screenshot 2024-09-02 204407](https://github.com/user-attachments/assets/b347daaf-3493-4875-8ad6-288d162e4412)
+<img src=https://github.com/user-attachments/assets/b347daaf-3493-4875-8ad6-288d162e4412>
+
 A password reset and,
 
-![Screenshot 2024-09-02 204455](https://github.com/user-attachments/assets/0d91d777-35de-4009-9704-2cab87bf1327)
+<img src=https://github.com/user-attachments/assets/0d91d777-35de-4009-9704-2cab87bf1327>
+
 Profile update
 
 On the profile page, I got the admin email id: admin@sky.thm
 
-Then I tried resetting the password and intercepting it in Burp Suite, with the idea that I would start with the password change for the account I created, but using Burp Suite, I would be changing the password of the admin account.
+Then I tried resetting the password and intercepting it in Burp Suite, with the idea that I would start with the password change for the account I created, but using Burp Suite, I would be changing the admin account's password.
 Access to the admin account is required as it will have more features than a normal user; hence, more features can be tested for exploitation.
 
 <img src=https://github.com/user-attachments/assets/60c6a324-6aa4-4372-aa51-8e0e66b11727>
+
 <img src=https://github.com/user-attachments/assets/fbcb3abe-1c54-4f97-a1f4-1116655f47b0>
+
 <img src=https://github.com/user-attachments/assets/0947b616-e940-42a0-ac4c-62b57b899c2b>
 
 Then I logged in to the admin account with the password I submitted using Burp Suite:
@@ -84,7 +88,7 @@ Then I logged in to the admin account with the password I submitted using Burp S
 
 Only the admin has the feature to add/change the profile picture. So, I tried uploading a PHP reverse shell there. And it got uploaded. The backend isn't checking the file that is being uploaded.
 
-Meanwhile I also searched for the subdirectories using Ffuf and got the following:
+Meanwhile, I also searched for the subdirectories using Ffuf and got the following:
 
 ```
 ┌──(kali㉿kali)-[~/Desktop/THM/Road]
