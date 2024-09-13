@@ -1,1 +1,1 @@
-# HTB-THM-Lab-Walkthrough
+# TryHackMe Labs Writeups
