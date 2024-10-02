@@ -1,4 +1,4 @@
-A CTF time room.
+A CTF type room.
 
 Starting with the machine enumeration.
 
