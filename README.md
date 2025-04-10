@@ -1,1 +1,1 @@
-# TryHackMe Labs Writeups
+# TryHackMe Room Writeups
